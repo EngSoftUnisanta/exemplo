@@ -1,23 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dominando Git</title>
+    <title>Meu Site Pessoal</title>
+    <link rel="stylesheet" href="site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <h1>Entendendo Git </h1>
-    <hr>
-    <ol>
-        <li>Clone</li>
-        <li>Commit</li>
-        <li>Push</li>
-        <li>Pull</li>
-    </ol>
+    <header>
+        <div class="container">
+            <h1>Seu Nome</h1>
+            <p>Seu Título ou Profissão</p>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h1>SE LEU MAMOU!!!</h1>
-    
+    <main>
+        <section id="sobre">
+            <div class="container">
+                <img src="https://via.placeholder.com/150" alt="Sua Foto" class="profile-pic">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Olá! Meu nome é [Seu Nome] e eu sou [sua profissão]. Eu sou apaixonado por [algo que você ama]. Este é o meu espaço para compartilhar um pouco sobre quem eu sou, o que eu faço e os projetos nos quais tenho trabalhado.
+                </p>
+                <p>
+                    [Adicione mais detalhes sobre sua experiência, habilidades, paixões, etc.].
+                </p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>Portfólio</h2>
+                <div class="portfolio-grid">
+                    <div class="project">
+                        <img src="https://via.placeholder.com/300x200" alt="Projeto 1">
+                        <h3>Nome do Projeto 1</h3>
+                        <p>Descrição curta do projeto. Pode ser sobre o que ele faz, as tecnologias usadas, etc.</p>
+                        <a href="#" class="btn">Ver Mais</a>
+                    </div>
+                    <div class="project">
+                        <img src="https://via.placeholder.com/300x200" alt="Projeto 2">
+                        <h3>Nome do Projeto 2</h3>
+                        <p>Descrição curta do projeto. Pode ser sobre o que ele faz, as tecnologias usadas, etc.</p>
+                        <a href="#" class="btn">Ver Mais</a>
+                    </div>
+                    <div class="project">
+                        <img src="https://via.placeholder.com/300x200" alt="Projeto 3">
+                        <h3>Nome do Projeto 3</h3>
+                        <p>Descrição curta do projeto. Pode ser sobre o que ele faz, as tecnologias usadas, etc.</p>
+                        <a href="#" class="btn">Ver Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Fique à vontade para entrar em contato comigo através do formulário abaixo ou por e-mail.</p>
+                <form action="#" method="POST">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
